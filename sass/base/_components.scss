@@ -1,12 +1,14 @@
+@import '../utils/variables';
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $main-family;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
-  background-color: #ffffff;
+  color: $text-color;
+  background-color: $main-background-color;
 }
 
 a {
@@ -43,4 +45,3 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*# sourceMappingURL=main.css.map */
