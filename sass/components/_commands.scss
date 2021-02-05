@@ -1,0 +1,49 @@
+.comands-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}
+
+.comands {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: $commands-background-color;
+}
+.comands .comands-list {
+  display: flex;
+  justify-content: space-between;
+}
+.comands .comands-list > li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: $white-color;
+}
+
+.comands .commands-container {
+  padding: 30px 32px;
+  text-align: center;
+}
+
+.comands h3 {
+  font-weight: 500;
+  color: $title-color;
+}
+
+.comands h3,
+.comands p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.comands .subtitle {
+  margin-bottom: 10px;
+}

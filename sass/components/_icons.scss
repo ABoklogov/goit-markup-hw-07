@@ -1,0 +1,65 @@
+// contacts-icons-----
+.contacts-icon {
+  margin-right: 10px;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+// commands-icons-----
+.commands-list-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.commands-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $icons-color;
+  fill: currentColor;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+}
+
+.commands-icon a:hover,
+.commands-icon a:focus {
+  background-color: $hover-color;
+  color: $white-color;
+}
+
+.commands-icon .icon-svg {
+  width: 20px;
+  height: 20px;
+}
+
+// clients-icons-----
+.clients .clients-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $icons-color;
+  border-radius: 4px;
+  color: $icons-color;
+  fill: currentColor;
+  transition: color 250ms $timing-function, border-color 250ms $timing-function;
+}
+
+.clients .clients-icon:hover,
+.clients .clients-icon:focus {
+  color: $hover-color;
+  border-color: $hover-color;
+}

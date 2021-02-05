@@ -1,0 +1,25 @@
+.menu,
+.site-nav,
+.header-main {
+  display: flex;
+}
+
+.header-main {
+  align-items: center;
+}
+
+.header-main .menu {
+  align-items: center;
+}
+
+.site-nav .site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .site-nav-item {
+  position: relative;
+}
+
+.header {
+  border-bottom: 1px solid $header-border;
+}

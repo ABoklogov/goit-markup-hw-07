@@ -1,0 +1,31 @@
+.site-nav .link {
+  display: block;
+  color: $title-color;
+}
+
+.site-nav .link {
+  padding: 32px 0;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms $timing-function;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link-visited {
+  color: $hover-color;
+}
+
+.site-nav .link-visited::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 25%);
+  width: 100%;
+  height: 4px;
+  background-color: $hover-color;
+  border-radius: 2px;
+}

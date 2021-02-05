@@ -7,7 +7,7 @@
 /* основной цвет фона #E5E5E5; */
 /* вторичный цвет фона #F5F4FA;*/
 /* цвет фона подвала и банера #2F303A; */
-/* :root {
+:root {
   --hover-color: #2196f3;
   --text-color: #757575;
   --main-background-color: #ffffff;
@@ -25,9 +25,9 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --header-border: #ececec;
   --border-form-color: rgba(255, 255, 255, 0.3);
-} */
+}
 /* -------------------------COMPONENTS------------------------- */
-/* body {
+body {
   font-family: var(--main-family);
   font-style: normal;
   font-weight: 400;
@@ -36,33 +36,33 @@
   letter-spacing: 0.03em;
   color: var(--text-color);
   background-color: var(--main-background-color);
-} */
+}
 
-/* .list-no-style {
+.list-no-style {
   list-style: none;
   margin: 0;
   padding: 0;
-} */
+}
 
-/* a {
+a {
   text-decoration: none;
-} */
+}
 
-/* .container {
+.container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-} */
+}
 
-/* img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -71,7 +71,7 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 /* -------------------------/COMPONENTS------------------------- */
 
 /* -------------------------HEADER------------------------------ */
@@ -210,6 +210,7 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 .banner-title {
   margin-top: 0;
   margin-bottom: 30px;
