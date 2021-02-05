@@ -1,16 +1,16 @@
 // contacts-icons-----
 .contacts-icon {
   margin-right: 10px;
-}
 
-.icon-envelope {
-  width: 16px;
-  height: 12px;
-}
+  &.icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
 
-.icon-smartphone {
-  width: 10px;
-  height: 16px;
+  &.icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 //advantages-icons----
@@ -24,82 +24,105 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
 
-.commands-icon a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: $icons-color;
-  fill: currentColor;
-  transition: background-color 250ms $timing-function,
-    color 250ms $timing-function;
-}
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $icons-color;
+    fill: currentColor;
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function;
+  }
 
-.commands-icon a:hover,
-.commands-icon a:focus {
-  background-color: $hover-color;
-  color: $white-color;
-}
+  a:hover,
+  a:focus {
+    background-color: $hover-color;
+    color: $white-color;
+  }
 
-.commands-icon .icon-svg {
-  width: 20px;
-  height: 20px;
+  .icon-svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 // clients-icons-----
-.clients .clients-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border: 1px solid $icons-color;
-  border-radius: 4px;
-  color: $icons-color;
-  fill: currentColor;
-  transition: color 250ms $timing-function, border-color 250ms $timing-function;
-}
+.clients-list {
+  .clients-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $icons-color;
+    border-radius: 4px;
+    color: $icons-color;
+    fill: currentColor;
+    transition: color 250ms $timing-function,
+      border-color 250ms $timing-function;
+  }
 
-.clients .clients-icon:hover,
-.clients .clients-icon:focus {
-  color: $hover-color;
-  border-color: $hover-color;
+  .clients-icon:hover,
+  .clients-icon:focus {
+    color: $hover-color;
+    border-color: $hover-color;
+  }
 }
 
 // footer-icons-----
-.footer-links .footer-list-icons {
+.footer-list-icons {
   color: $white-color;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-links li:not(:last-child) {
+.commands-icon:not(:last-child) {
   margin-right: 10px;
 }
 
 // modal-form-icon----
-.modal-conditions .conditions-icon-check {
-  display: block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 2px solid $title-color;
-  border-radius: 4px;
-  transition: background-color 250ms $timing-function,
-    border-color 250ms $timing-function;
+.modal-conditions {
+  .conditions-icon-check {
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid $title-color;
+    border-radius: 4px;
+    transition: background-color 250ms $timing-function,
+      border-color 250ms $timing-function;
+  }
+
+  &-input:checked + .conditions-icon-check {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    background-image: url(../images/decoration/icons/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  &-input:focus + .conditions-icon-check {
+    border-color: $hover-color;
+  }
 }
 
-.modal-conditions-input:checked + .conditions-icon-check {
-  background-color: $hover-color;
-  border-color: $hover-color;
-  background-image: url(../images/decoration/icons/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
+.modal-input-box-icon {
+  position: absolute;
+  top: 29px;
+  left: 15px;
+  transition: fill 250ms $timing-function;
 }
 
-.modal-conditions-input:focus + .conditions-icon-check {
+.modal-input:placeholder-shown:focus + .modal-input-box-icon,
+.modal-input:placeholder-shown:focus,
+.modal-form-comment:placeholder-shown:focus,
+.modal-input:not(:placeholder-shown):focus + .modal-input-box-icon,
+.modal-input:not(:placeholder-shown):focus,
+.modal-form-comment:not(:placeholder-shown):focus {
+  fill: $hover-color;
   border-color: $hover-color;
+  outline: none;
 }

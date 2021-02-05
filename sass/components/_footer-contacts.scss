@@ -1,20 +1,24 @@
-.footer .address {
-  margin-bottom: 9px;
-  font-style: normal;
-  color: $white-color;
-}
+.footer-box-contacts {
+  margin-right: 85px;
 
-.footer-contacts li:not(:last-child) {
-  margin-bottom: 9px;
-  display: inline-block;
-}
+  .address {
+    margin-bottom: 9px;
+    font-style: normal;
+    color: $white-color;
+  }
 
-.footer-contacts a {
-  color: $footer-contacts-color;
-  transition: color 250ms $timing-function;
-}
+  li:not(:last-child) {
+    margin-bottom: 9px;
+    display: inline-block;
+  }
 
-.footer-contacts a:hover,
-.footer-contacts a:focus {
-  color: $hover-color;
+  &-links {
+    color: $footer-contacts-color;
+    transition: color 250ms $timing-function;
+  }
+
+  &-links:hover,
+  &-links:focus {
+    color: $hover-color;
+  }
 }

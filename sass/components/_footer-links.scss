@@ -1,12 +1,13 @@
-.footer-links .footer-links-title,
-.footer-form-box .footer-form-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $white-color;
+.footer-links {
+  &-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+  }
 }

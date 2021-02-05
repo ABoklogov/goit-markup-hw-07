@@ -6,16 +6,10 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $black-color;
-}
 
-.logo span {
-  color: $hover-color;
-}
-
-.footer .logo-white {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: $white-color;
+  span {
+    color: $hover-color;
+  }
 }
 
 .footer .logo {
@@ -24,4 +18,14 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  span {
+    color: $hover-color;
+  }
+}
+
+.logo-white {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $white-color;
 }
