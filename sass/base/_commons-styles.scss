@@ -43,3 +43,23 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* ----portfolio-components----- */
+.portfolio {
+  padding: 94px 0;
+
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+/* ----modal-companents----- */
+.modal-conditions-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

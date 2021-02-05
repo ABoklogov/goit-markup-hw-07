@@ -13,6 +13,12 @@
   height: 16px;
 }
 
+//advantages-icons----
+.advantages-icons {
+  width: 70px;
+  height: 70px;
+}
+
 // commands-icons-----
 .commands-list-icon {
   display: flex;
@@ -61,5 +67,39 @@
 .clients .clients-icon:hover,
 .clients .clients-icon:focus {
   color: $hover-color;
+  border-color: $hover-color;
+}
+
+// footer-icons-----
+.footer-links .footer-list-icons {
+  color: $white-color;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links li:not(:last-child) {
+  margin-right: 10px;
+}
+
+// modal-form-icon----
+.modal-conditions .conditions-icon-check {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid $title-color;
+  border-radius: 4px;
+  transition: background-color 250ms $timing-function,
+    border-color 250ms $timing-function;
+}
+
+.modal-conditions-input:checked + .conditions-icon-check {
+  background-color: $hover-color;
+  border-color: $hover-color;
+  background-image: url(../images/decoration/icons/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.modal-conditions-input:focus + .conditions-icon-check {
   border-color: $hover-color;
 }

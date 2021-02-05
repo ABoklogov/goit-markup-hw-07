@@ -15,20 +15,21 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-}
 
-.banner .container-content {
-  max-width: 696px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.banner-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $white-color;
+  .container-content {
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .banner-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white-color;
+  }
 }

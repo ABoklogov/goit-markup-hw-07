@@ -11,3 +11,17 @@
 .logo span {
   color: $hover-color;
 }
+
+.footer .logo-white {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $white-color;
+}
+
+.footer .logo {
+  font-family: $logo-faily;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}

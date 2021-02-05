@@ -1,0 +1,20 @@
+.footer .address {
+  margin-bottom: 9px;
+  font-style: normal;
+  color: $white-color;
+}
+
+.footer-contacts li:not(:last-child) {
+  margin-bottom: 9px;
+  display: inline-block;
+}
+
+.footer-contacts a {
+  color: $footer-contacts-color;
+  transition: color 250ms $timing-function;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: $hover-color;
+}

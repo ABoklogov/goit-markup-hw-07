@@ -1,25 +1,25 @@
-.clients-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $title-color;
-}
-
 .clients {
   padding-bottom: 94px;
   padding-top: 94px;
-}
 
-.clients .clients-list {
-  display: flex;
-  justify-content: space-between;
-}
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.clients .client-box {
-  width: 170px;
-  height: 90px;
+  &-box {
+    width: 170px;
+    height: 90px;
+  }
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+  }
 }
