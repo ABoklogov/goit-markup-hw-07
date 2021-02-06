@@ -1,10 +1,8 @@
-.footer-form-box {
-  .footer-form {
-    display: flex;
-    align-items: center;
-  }
+.footer-form {
+  display: flex;
+  align-items: center;
 
-  .footer-form-title {
+  &-title {
     margin-top: 0;
     margin-bottom: 20px;
     font-style: normal;
@@ -16,11 +14,11 @@
     color: $white-color;
   }
 
-  .footer-form-label {
+  &-label {
     margin-right: 12px;
   }
 
-  .footer-form-input {
+  &-input {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
@@ -30,16 +28,15 @@
     border-radius: 4px;
   }
 
-  .footer-form-input::placeholder {
+  &-input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: $footer-contacts-color;
   }
-
-  .footer-form-input:not(:placeholder-shown),
-  .footer-form-input:placeholder-shown {
+  &-input:not(:placeholder-shown),
+  &-input:placeholder-shown {
     border: 1px solid $border-form-color;
     outline: none;
     color: $white-color;

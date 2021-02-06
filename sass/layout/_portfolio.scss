@@ -1,3 +1,14 @@
+.portfolio-items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* ---------portfolio button--------- */
+.portfolio-items-button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-list {
   width: 370px;
   margin: 15px;

@@ -1,4 +1,4 @@
-// contacts-icons-----
+/*--contacts-icons--*/
 .contacts-icon {
   margin-right: 10px;
 
@@ -13,19 +13,18 @@
   }
 }
 
-//advantages-icons----
-.advantages-icons {
-  width: 70px;
-  height: 70px;
-}
-
-// commands-icons-----
-.commands-list-icon {
+/*-- social-networks-icons--*/
+.social-networks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  a {
+  .icon-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,65 +37,36 @@
       color 250ms $timing-function;
   }
 
-  a:hover,
-  a:focus {
+  &-link:hover,
+  &-link:focus {
     background-color: $hover-color;
     color: $white-color;
   }
 
-  .icon-svg {
-    width: 20px;
-    height: 20px;
+  &-icon:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
-// clients-icons-----
-.clients-list {
-  .clients-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: 1px solid $icons-color;
-    border-radius: 4px;
-    color: $icons-color;
-    fill: currentColor;
-    transition: color 250ms $timing-function,
-      border-color 250ms $timing-function;
-  }
-
-  .clients-icon:hover,
-  .clients-icon:focus {
-    color: $hover-color;
-    border-color: $hover-color;
-  }
-}
-
-// footer-icons-----
-.footer-list-icons {
+/*--footer-icons--*/
+.social-networks-gray {
   color: $white-color;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.commands-icon:not(:last-child) {
-  margin-right: 10px;
-}
+/*--modal-form-icon--*/
 
-// modal-form-icon----
-.modal-conditions {
-  .conditions-icon-check {
-    display: block;
-    width: 16px;
-    height: 15px;
-    margin-right: 7px;
-    border: 2px solid $title-color;
-    border-radius: 4px;
-    transition: background-color 250ms $timing-function,
-      border-color 250ms $timing-function;
-  }
+.conditions-icon-check {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid $title-color;
+  border-radius: 4px;
+  transition: background-color 250ms $timing-function,
+    border-color 250ms $timing-function;
 
-  &-input:checked + .conditions-icon-check {
+  .modal-conditions-input:checked + & {
     background-color: $hover-color;
     border-color: $hover-color;
     background-image: url(../images/decoration/icons/icon-check.svg);
@@ -104,7 +74,7 @@
     background-origin: border-box;
   }
 
-  &-input:focus + .conditions-icon-check {
+  .modal-conditions-input:focus + & {
     border-color: $hover-color;
   }
 }
