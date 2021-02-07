@@ -1,7 +1,7 @@
 .lessons {
   padding-bottom: 94px;
 
-  &-site {
+  &-items {
     display: flex;
     justify-content: space-between;
   }
@@ -17,14 +17,14 @@
     color: $title-color;
   }
 
-  .lessons-site-box {
+  .lessons-items-box {
     position: relative;
     width: 370px;
     height: 294px;
   }
 }
 
-.lessons-site-subbox {
+.lessons-items-subbox {
   position: absolute;
   bottom: 0;
   height: 70px;
@@ -34,11 +34,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  a {
-    display: block;
-  }
-
-  p {
+  &-slogan {
     margin: 0;
     font-weight: 500;
     font-size: 14px;

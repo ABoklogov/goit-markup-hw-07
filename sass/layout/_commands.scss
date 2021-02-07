@@ -3,11 +3,6 @@
   padding-top: 94px;
   background-color: $commands-background-color;
 
-  &-container {
-    padding: 30px 32px;
-    text-align: center;
-  }
-
   &-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -30,14 +25,19 @@
     border-radius: 4px;
     background: $white-color;
   }
+}
 
-  h3 {
+.comands-container {
+  padding: 30px 32px;
+  text-align: center;
+
+  &-subtitle {
     font-weight: 500;
     color: $title-color;
   }
 
-  h3,
-  p {
+  &-subtitle,
+  &-text {
     margin-top: 0;
     margin-bottom: 16px;
     font-size: 16px;
@@ -45,7 +45,7 @@
     letter-spacing: 0.03em;
   }
 
-  .subtitle {
+  &-subtitle {
     margin-bottom: 10px;
   }
 }
